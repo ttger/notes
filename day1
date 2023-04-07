@@ -1,1 +1,10 @@
-
+项目结构：
+        逆向工程文件：service(serviceImpl)、 mapper、entity、 mapper.xml
+                    自动生成文件一般不做编辑，重写业务逻辑层，调用mapper、service中的方法
+                    
+        biz 业务逻辑层：
+                    重写业务逻辑方法，调用mapper或service，必要时手写sql
+                    
+        controller：控制
+                    使用模板方法，1.校验值   2.业务过程
+                    
